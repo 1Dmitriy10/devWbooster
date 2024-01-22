@@ -1,0 +1,15 @@
+@font-face {
+	font-family: Mont;
+	font-display: swap;
+	src: url("../fonts/Mont-Regular.woff2") format("woff2"), url("../fonts/Mont-Regular.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: ReformaGrotes;
+	font-display: swap;
+	src: url("../fonts/ReformaGroteskBoldC.woff2") format("woff2"),
+		url("../fonts/ReformaGroteskBoldC.woff") format("woff");
+	font-weight: 700;
+	font-style: normal;
+}

@@ -1,6 +1,29 @@
 //импорты
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
 @import "fonts";
 @import "reset";
+@import "root";
+
+body {
+    font-family: "Open Sans";
+}
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    @media (max-width: 992px) {
+        max-width: 960px;
+    }
+    @media (max-width: 768px) {
+        max-width: 720px;
+    }
+    @media (max-width: 576px) {
+        max-width: 540px;
+    }
+    @media (min-width: 576px) {
+        max-width: none;
+    }
+}
+
 @import "./blocks/footer";
 @import "./blocks/header";
 @import "./blocks/burgerMenu";
