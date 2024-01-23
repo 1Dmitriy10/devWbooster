@@ -12,7 +12,7 @@
     &:hover {
         transform: scale(90%);
     }
-    @media (max-width: 900px) {
+    @media (max-width: 800px) {
         display: flex;
     }
 }
@@ -21,7 +21,7 @@
     display: flex;
     width: 40px;
     height: 3px;
-    background-color: black;
+    background-color: var(--primary-white);
     position: relative;
     z-index: 20;
     &::before {
@@ -29,7 +29,7 @@
         display: flex;
         width: 40px;
         height: 3px;
-        background-color: black;
+        background-color: var(--primary-white);
         position: absolute;
         top: 12px;
         transition: 0.5s;
@@ -39,7 +39,7 @@
         display: flex;
         width: 40px;
         height: 3px;
-        background-color: black;
+        background-color: var(--primary-white);
         position: absolute;
         top: -12px;
         transition: 0.5s;
@@ -48,14 +48,14 @@
         display: flex;
         width: 40px;
         height: 0;
-        background-color: black;
+        background-color: var(--primary-white);
         position: relative;
         &::before {
             content: "";
             display: flex;
             width: 40px;
             height: 3px;
-            background-color: black;
+            background-color: var(--primary-white);
             position: absolute;
             top: 0;
             transform: rotate(45deg);
@@ -66,7 +66,7 @@
             display: flex;
             width: 40px;
             height: 3px;
-            background-color: black;
+            background-color: var(--primary-white);
             position: absolute;
             top: 0;
             transform: rotate(-45deg);
@@ -76,7 +76,7 @@
 }
 // Мобильное меню
 .nav_box-mob {
-    padding: 25px;
+    padding: 120px 25px 25px 25px;
     position: fixed;
     display: flex;
     justify-content: center;
@@ -86,7 +86,7 @@
     opacity: 0;
     transition: 0.5s;
     transform: translateY(-436px);
-    background-color: #07086c;
+    background-color: #020202;
     &.active {
         transition: 0.5s;
         opacity: 1;
