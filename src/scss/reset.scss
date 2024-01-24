@@ -33,7 +33,7 @@ body {
 @mixin adaptiveValue($property, $startSize, $minSize) {
   $addSize: $startSize - $minSize;
   // Ширина полотна макета
-  $maxWidth: 1920;
+  $maxWidth: 1170;
   #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth - 320}));
 }
 
@@ -69,8 +69,8 @@ body {
 h1 {
   color: var(--primary-red);
   /*h1 */
-  font-family: ReformaGrotesk;
-  font-size: 45px;
+  font-family: ReformaGroteskBoldC;
+  @include adaptiveValue(font-size, 45, 30);
   font-weight: 700;
   line-height: 52px; /* 115.556% */
   letter-spacing: 2.25px;
@@ -80,8 +80,8 @@ h1 {
 h2 {
   color: var(--primary-black);
   /* h2 */
-  font-family: ReformaGrotes;
-  font-size: 45px;
+  font-family: ReformaGroteskBoldC;
+  @include adaptiveValue(font-size, 45, 30);
   font-weight: 700;
   line-height: 52px; /* 115.556% */
   letter-spacing: 2.25px;
@@ -91,8 +91,8 @@ h2 {
 h3 {
   color: var(--primary-black);
   /* h3 */
-  font-family: ReformaGrotesk;
-  font-size: 45px;
+  font-family: ReformaGroteskBoldC;
+  @include adaptiveValue(font-size, 45, 30);
   font-weight: 700;
   line-height: 52px; /* 115.556% */
   letter-spacing: 2.25px;
@@ -102,7 +102,7 @@ h3 {
 p {
   color: var(--primary-black);
   /* Текст */
-  font-size: 16px;
+  @include adaptiveValue(font-size, 16, 14);
   font-weight: 400;
   line-height: 19.2px; /* 120% */
   letter-spacing: 0.8px;

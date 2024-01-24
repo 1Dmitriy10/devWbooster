@@ -3,6 +3,7 @@
 @import "fonts";
 @import "reset";
 @import "root";
+@import "components";
 
 body {
     font-family: "Open Sans";
@@ -28,3 +29,6 @@ body {
 @import "./blocks/footer";
 @import "./blocks/header";
 @import "./blocks/burgerMenu";
+@import "./blocks/bread-crumbs";
+@import "./blocks/banner";
+@import "./blocks/tasks";

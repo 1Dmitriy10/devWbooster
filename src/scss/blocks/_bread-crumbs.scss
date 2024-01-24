@@ -1,0 +1,15 @@
+.bread-crumbs {
+    margin-top: 76.48px;
+}
+.bread-crumbs__container {
+    padding: 32px 0 16px 0;
+}
+.bread-crumbs__item {
+    color: var(--primary-gray);
+    /* хлебные крощки */
+    font-size: 12px;
+    font-weight: 400;
+    & .active {
+        color: var(--primary-red);
+    }
+}

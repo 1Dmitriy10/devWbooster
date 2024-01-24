@@ -1,0 +1,355 @@
+//===========кнопки==================
+
+//основная кнопка
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    border: 1px solid var(--primary-red);
+    background: var(--secondary-black);
+    box-shadow: 0px 2px 0px 0px #f33;
+    padding: 10px 32px;
+    //t
+    color: var(--primary-white);
+    text-align: center;
+    /* текст кнопки */
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 15px; /* 100% */
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+    transition: 0.3s;
+    &:hover {
+        transition: 0.3s;
+        color: var(--primary-red);
+    }
+    &:active {
+        transition: 0.3s;
+        background: var(--primary-white);
+        color: var(--secondary-black);
+    }
+}
+
+//кнопка наверх
+.icon-btn-up {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 51px;
+    height: 51px;
+    border-radius: 100%;
+    border: 2px solid var(--primary-gray);
+    transition: 0.3s;
+    &::before {
+        transition: 0.3s;
+        font-size: 18px;
+    }
+    &:hover {
+        transition: 0.3s;
+        border: 2px solid var(--primary-red);
+        &::before {
+            transition: 0.3s;
+            color: var(--primary-red);
+        }
+    }
+}
+.icon-btn-exit {
+    width: 24px;
+    height: 24px;
+    transition: 0.3s;
+    cursor: pointer;
+    &::before {
+        transition: 0.3s;
+        font-size: 14px;
+    }
+    &:hover {
+        transition: 0.3s;
+        &::before {
+            transition: 0.3s;
+            color: var(--primary-black);
+        }
+    }
+}
+.icon-btn-down {
+    width: 34px;
+    height: 34px;
+    transition: 0.3s;
+    cursor: pointer;
+    &::before {
+        transition: 0.3s;
+        font-size: 34px;
+    }
+    &:hover {
+        transition: 0.3s;
+        &::before {
+            transition: 0.3s;
+            color: var(--primary-white);
+        }
+    }
+}
+
+//===========карточки==================
+
+//карточка задач
+.tasks-card__box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 28px;
+    counter-reset: task;
+    @media (max-width: 920px) {
+        gap: 30px;
+    }
+    @media (max-width: 650px) {
+        gap: 20px;
+    }
+}
+.tasks-card {
+    flex: 0 1 calc(33.4% - 20px);
+    display: flex;
+    padding: 16px;
+    min-height: 170px;
+    min-width: 280px;
+    gap: 16px;
+    border-radius: 4px;
+    border: 1px solid var(--secondary-gray);
+    position: relative;
+    transition: 0.3s;
+    &::after {
+        content: "";
+        position: absolute;
+        right: 8.554px;
+        bottom: -39px;
+        counter-increment: task;
+        content: counter(task);
+        color: var(--primary-red);
+        text-align: center;
+        font-family: ReformaGrotes;
+        font-size: 69.979px;
+        font-weight: 700;
+        line-height: 80.865px; /* 115.556% */
+        letter-spacing: 3.499px;
+        text-transform: uppercase;
+    }
+    &:hover {
+        transition: 0.3s;
+        background: var(--primary-black);
+        & > .tasks-card__text-box > .tasks-card__text {
+            transition: 0.3s;
+            color: var(--primary-white);
+        }
+    }
+    @media (max-width: 920px) {
+        flex: 0 1 calc(50% - 15px);
+    }
+    @media (max-width: 650px) {
+        flex: 1 1 100%;
+        &::after {
+            font-size: 40px;
+        }
+    }
+}
+.tasks-card-logo-box {
+}
+.tasks-card-logo {
+}
+.tasks-card__text-box {
+}
+.tasks-card__text {
+    color: var(--primary-black);
+    /* активный пункт */
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 22.5px; /* 150% */
+    transition: 0.3s;
+}
+
+//карточка тарифа
+.tariff-card__box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 64px;
+}
+.tariff-card {
+    flex: 0 1 calc(50% - 30px);
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+    max-width: 359px;
+    border-radius: 4px;
+    border: 1px solid var(--secondary-gray);
+    background: var(--primary-white);
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+    &:hover {
+        transition: 0.3s;
+        border: 1px solid var(--primary-gray);
+    }
+    @media (max-width: 800px) {
+        flex: 0 1 80%;
+        max-width: none;
+    }
+    @media (max-width: 600px) {
+        flex: 1 1 100%;
+    }
+}
+.tariff-card__row {
+    display: flex;
+    flex-direction: column;
+    &:not(:last-child) {
+        border-bottom: 1px solid #eaeaea;
+    }
+    &:nth-child(2) {
+        height: 100%;
+    }
+    &:last-child {
+        padding-top: 16px;
+    }
+}
+.tariff-card__title {
+    color: var(--primary-red);
+    font-family: ReformaGrotes;
+    font-size: 27.171px;
+    font-weight: 700;
+    line-height: 31.397px; /* 115.556% */
+    letter-spacing: 1.359px;
+    text-transform: uppercase;
+    align-self: flex-start;
+    padding: 13px 17.33px;
+    margin-bottom: 8px;
+    //
+    border-radius: 4px;
+    border: 1px solid var(--primary-red);
+}
+.tariff-card__text {
+    color: var(--primary-black);
+
+    /* активный пункт */
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 22.5px; /* 150% */
+    margin-bottom: 22px;
+}
+.tariff-card__prise {
+    display: flex;
+    align-items: flex-end;
+    color: var(--primary-red);
+    font-size: 45.83px;
+    font-weight: 800;
+    line-height: 39.413px; /* 85.999% */
+    letter-spacing: 1.792px;
+    text-transform: uppercase;
+    margin-bottom: 37px;
+}
+.tariff-card__prise-month {
+    display: flex;
+    color: var(--primary-red);
+    font-size: 17.746px;
+    font-weight: 700;
+    line-height: 19.521px; /* 110% */
+    letter-spacing: 0.887px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+.tariff-card__list {
+    margin-top: 32.5px;
+    margin-bottom: 32.5px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.tariff-card__list-item {
+    line-height: 14px; /* 100% */
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-left: 36px;
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        background: url("./img/tariff-card-list.png") 0 0 / cover no-repeat;
+        width: 24px;
+        height: 24px;
+    }
+}
+.tariff-card__btn {
+    // margin-top: auto;
+}
+//оптимум
+.tariff-card_o {
+    &:hover {
+        border: 1px solid var(--primary-red);
+    }
+    & > .tariff-card__row {
+        position: relative;
+    }
+}
+.tariff-card__attention {
+    position: absolute;
+    top: 43%;
+    right: -112px;
+    //
+    color: var(--primary-white);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.2px; /* 120% */
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    //
+    border-radius: 4px 4px 0px 0px;
+    background: var(--primary-red);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    padding: 10px 45px;
+    transform: rotate(270deg) translateX(15%);
+    margin-bottom: 0;
+}
+.tariff-card__prise_o {
+    color: #000;
+    & > .tariff-card__prise-month_o {
+        color: #000;
+    }
+}
+
+//=======================================================================
+@font-face {
+    font-family: "icomoon";
+    src: url("fonts/icomoon.eot?qirscf");
+    src: url("fonts/icomoon.eot?qirscf#iefix") format("embedded-opentype"),
+        url("fonts/icomoon.ttf?qirscf") format("truetype"), url("fonts/icomoon.woff?qirscf") format("woff"),
+        url("fonts/icomoon.svg?qirscf#icomoon") format("svg");
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: "icomoon" !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-btn-down:before {
+    content: "\e902";
+    color: #f33;
+}
+.icon-btn-exit:before {
+    content: "\e901";
+    color: #999;
+}
+.icon-btn-up:before {
+    content: "\e900";
+    color: #999;
+}
