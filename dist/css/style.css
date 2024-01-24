@@ -231,10 +231,11 @@ section {
 .tasks-card__box {
   display: flex;
   flex-wrap: wrap;
-  gap: 28px;
+  column-gap: 28px;
+  row-gap: 80px;
   counter-reset: task;
 }
-@media (max-width: 920px) {
+@media (max-width: 942px) {
   .tasks-card__box {
     gap: 30px;
   }
@@ -266,7 +267,7 @@ section {
   content: counter(task);
   color: var(--primary-red);
   text-align: center;
-  font-family: ReformaGrotes;
+  font-family: ReformaGroteskBoldC;
   font-size: 69.979px;
   font-weight: 700;
   line-height: 80.865px; /* 115.556% */
@@ -281,7 +282,7 @@ section {
   transition: 0.3s;
   color: var(--primary-white);
 }
-@media (max-width: 920px) {
+@media (max-width: 942px) {
   .tasks-card {
     flex: 0 1 calc(50% - 15px);
   }
@@ -825,6 +826,16 @@ body {
 
 .banner__btn {
   align-self: flex-start;
+}
+
+.tasks__container {
+  padding: 64px 0 128px 0;
+}
+
+.tasks-card__text_lite {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 18px;
 }
 
 .webp .tariff-card__list-item::before{ background: url(./img/tariff-card-list.webp) 0 0/cover no-repeat; }
