@@ -816,7 +816,7 @@ body {
   align-items: center;
   position: absolute;
   right: 20px;
-  z-index: 20;
+  z-index: 60;
 }
 .burger-menu-wrap:hover {
   transform: scale(90%);
@@ -833,7 +833,7 @@ body {
   height: 3px;
   background-color: var(--primary-white);
   position: relative;
-  z-index: 20;
+  z-index: 60;
 }
 .burger-menu::before {
   content: "";
@@ -893,16 +893,16 @@ body {
   width: 100%;
   left: 0;
   top: 0;
-  opacity: 0;
   transition: 0.5s;
-  transform: translateY(-436px);
+  transform: translateY(-100%);
   background-color: #020202;
+  z-index: 45;
 }
 .nav_box-mob.active {
   transition: 0.5s;
-  opacity: 1;
-  transform: translateY(0);
-  z-index: 10;
+  transform: translateY(0%);
+  z-index: 45;
+  height: 100dvh;
 }
 
 .nav_box-mob-list {
