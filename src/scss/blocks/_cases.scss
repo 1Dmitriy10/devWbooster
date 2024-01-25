@@ -82,6 +82,7 @@
 }
 .cases__btn {
     margin-top: auto;
+    align-self: flex-start;
     @media (max-width: 600px) {
         align-self: center;
     }
