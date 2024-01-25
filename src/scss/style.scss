@@ -21,7 +21,7 @@ body {
     @media (max-width: 576px) {
         max-width: 540px;
     }
-    @media (min-width: 576px) {
+    @media (max-width: 576px) {
         max-width: none;
     }
 }
@@ -34,3 +34,4 @@ body {
 @import "./blocks/tasks";
 @import "./blocks/stages";
 @import "./blocks/results";
+@import "./blocks/cases";
