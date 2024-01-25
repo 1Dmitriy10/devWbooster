@@ -271,9 +271,10 @@
         content: "";
         position: absolute;
         left: 0;
-        background: url("./img/tariff-card-list.png") 0 0 / cover no-repeat;
+        background: url("../img/tariff-card-list.png") 0 0 / cover no-repeat;
         width: 24px;
         height: 24px;
+        border: 1px solid transparent;
     }
 }
 .tariff-card__btn {
