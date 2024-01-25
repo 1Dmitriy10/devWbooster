@@ -1305,7 +1305,7 @@ body {
 }
 @media (max-width: 600px) {
   .cases__container {
-    padding: 10px 0;
+    padding: 10px;
   }
 }
 
@@ -1346,7 +1346,6 @@ body {
 @media (max-width: 600px) {
   .cases__text-box {
     flex: 1 1 100%;
-    text-align: center;
   }
 }
 
