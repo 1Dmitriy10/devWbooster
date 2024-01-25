@@ -545,6 +545,148 @@ body {
   }
 }
 
+.footer {
+  background: #020202;
+}
+
+.footer__container {
+  padding: 5px 0 0 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__content {
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 400px) {
+  .footer__content {
+    flex-direction: column-reverse;
+  }
+}
+
+.footer__row-up {
+  display: flex;
+  align-items: center;
+  padding-bottom: 5px;
+}
+@media (max-width: 400px) {
+  .footer__row-up {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+.footer__logo-box {
+  margin-right: 10%;
+}
+@media (max-width: 400px) {
+  .footer__logo-box {
+    margin-right: 0;
+  }
+}
+
+.social__box {
+  display: flex;
+  gap: 10px;
+  margin-left: auto;
+  margin-right: 50px;
+}
+@media (max-width: 400px) {
+  .social__box {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.fa-telegram {
+  color: var(--primary-white);
+  font-size: 20px;
+}
+.fa-telegram:hover {
+  color: var(--primary-red);
+}
+
+.fa-whatsapp {
+  color: var(--primary-white);
+  font-size: 20px;
+}
+.fa-whatsapp:hover {
+  color: var(--primary-red);
+}
+
+.footer__contact-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__card-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.footer-card {
+  flex: 0 1 calc(25% - 23px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (max-width: 1003px) {
+  .footer-card {
+    flex: 0 1 calc(33.4% - 23px);
+  }
+}
+@media (max-width: 758px) {
+  .footer-card {
+    flex: 0 1 calc(50% - 23px);
+  }
+}
+@media (max-width: 600px) {
+  .footer-card {
+    flex: 1 1 100%;
+  }
+}
+
+.no-webp .footer__card-border{
+  background: url("../img/footer/footer__card-border.png") 0 0/cover no-repeat; }
+
+.footer__card-border {
+  width: 207px;
+  height: 102px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 22px;
+  margin-bottom: 10px;
+}
+
+.footer__card-link {
+  text-align: center;
+  text-decoration: underline;
+  color: var(--primary-white);
+}
+
+.footer__card-img {
+  transform: scale(-1, 1);
+}
+
+.footer__copy {
+  padding: 2rem 0;
+  text-align: center;
+  font-weight: 300;
+  font-size: 1.2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.16);
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  .hidden {
+    display: none;
+  }
+}
+
 .header {
   position: fixed;
   width: 100%;
@@ -1347,4 +1489,5 @@ body {
   }
 }
 .webp .tariff-card__list-item::before{ background: url(../img/tariff-card-list.webp) 0 0/cover no-repeat; }
+.webp .footer__card-border{ background: url(../img/footer/footer__card-border.webp) 0 0/cover no-repeat; }
 .webp .results{ background: url(../img/results/results__bg.webp) 0 0/cover no-repeat; }
