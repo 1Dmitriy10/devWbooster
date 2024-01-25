@@ -3,6 +3,9 @@
 }
 .stages__container {
     padding-top: 64px;
+    @media (max-width: 600px) {
+        padding-top: 30px;
+    }
 }
 .stages__title {
     color: var(--primary-red);

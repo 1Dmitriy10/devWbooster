@@ -964,6 +964,12 @@ body {
   }
 }
 
+@media (max-width: 600px) {
+  .banner__title {
+    line-height: 40px;
+  }
+}
+
 .banner__subtitle {
   max-width: 716px;
   margin-bottom: 32px;
@@ -993,6 +999,11 @@ body {
 .tasks__container {
   padding: 64px 0 128px 0;
 }
+@media (max-width: 600px) {
+  .tasks__container {
+    padding: 30px 0 30px 0;
+  }
+}
 
 .tasks-card__text_lite {
   font-size: 12px;
@@ -1006,6 +1017,11 @@ body {
 
 .stages__container {
   padding-top: 64px;
+}
+@media (max-width: 600px) {
+  .stages__container {
+    padding-top: 30px;
+  }
 }
 
 .stages__title {
@@ -1151,6 +1167,11 @@ body {
 .results__container {
   padding: 64px 0;
 }
+@media (max-width: 600px) {
+  .results__container {
+    padding: 30px 0;
+  }
+}
 
 .results__title {
   color: var(--primary-red);
@@ -1160,6 +1181,11 @@ body {
 .results__container-down {
   display: flex;
   padding: 64px 0;
+}
+@media (max-width: 600px) {
+  .results__container-down {
+    padding: 30px 0;
+  }
 }
 
 .results__card-box {
@@ -1255,6 +1281,11 @@ body {
   padding: 64px 0;
   align-self: flex-start;
   width: 100%;
+}
+@media (max-width: 600px) {
+  .cases__container-up {
+    padding: 30px 0;
+  }
 }
 
 .cases__title {
@@ -1373,6 +1404,17 @@ body {
 
 .tariffs__container {
   padding: 64px 0;
+}
+@media (max-width: 600px) {
+  .tariffs__container {
+    padding: 30px 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .tariffs__title {
+    margin-bottom: 20px;
+  }
 }
 
 .feedback__container {

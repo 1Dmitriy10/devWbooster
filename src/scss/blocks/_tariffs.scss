@@ -2,6 +2,12 @@
 }
 .tariffs__container {
     padding: 64px 0;
+    @media (max-width: 600px) {
+        padding: 30px 0;
+    }
 }
 .tariffs__title {
+    @media (max-width: 600px) {
+        margin-bottom: 20px;
+    }
 }
